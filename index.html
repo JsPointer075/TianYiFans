@@ -9,21 +9,30 @@
 
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel = "stylesheet" href = "css/style.css" type = "text/css">
+    <link rel = "stylesheet" href = "css/header-style.css" type = "text/css">
 </head>
 <body>
 <header>
-    <div class = "title-warp">
-    <img id = "tianyi" src = "assets/img/洛天依头像2026.png" width = "35" height = "35"><span id = "title">天依fans</span>
-    &nbsp;&nbsp;
-    <a href = "#" class = "yeMian">首页</a>
-    &nbsp;&nbsp;
-    <a href = "番剧.html" class = "yeMian">番剧</a>
-    &nbsp;&nbsp;
-    <a href = "游戏.html" class = "yeMian">游戏</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <span class = "headerText">搜索：</span><input type = "text" name = "search" placeholder = "请输入文本">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href = "登录注册.html" class = "yeMian"><img src = "assets/img/洛天依头像2026.png" width = "25" height = "25">登录/注册</a>
+    <div class = "title-wrap">
+        <div class = "nav-left">
+            <ul>
+                <li><img id = "tianyi" src = "assets/img/洛天依头像2026.png" width = "30" height = "30"><span id = "title">天依fans</span></li>
+                <li><a href = "#" class = "yeMian">首页</a></li>
+                <li><a href = "番剧.html" class = "yeMian">番剧</a></li>
+                <li><a href = "游戏.html" class = "yeMian">游戏</a></li>
+            </ul>
+        </div>
+        <div class = "search-center">
+            <form action = "#" method = "get" class = "search-form">
+                <div class = "search-wrapper">
+                    <input type = "text" name = "search" placeholder = "请输入文本">
+                    <button type = "submit" class = "search-btn">搜索</button>
+                </div>
+            </form>
+        </div>
+        <div class = "nav-right">
+            <a href = "登录注册.html" class = "yeMian"><img src = "assets/img/洛天依头像2026.png" width = "25" height = "25">登录/注册</a>
+        </div>
     </div>
 
     <a name = "top"></a>
@@ -37,13 +46,16 @@
 <hr/>
 
 <section>
-    <p><h2 class = "zhuanTi">公告：天依fans于2026年8月19日正式上线</h2></p>
+    <div class = "zhuanTi">本站公告</div>
+    <ul class  = "gongGao">
+        <li>天依fans于2026年8月19日正式上线</li>
+    </ul>
 </section>
 
 <hr/>
 
 <section>
-    <p><h2 class = "zhuanTi">天依专辑</h2></p>
+    <div class = "zhuanTi">天依专辑</div>
     <video src = "assets/video/反乌托邦Pt.2.mp4" width = "240" height = "135" controls></video>
     <video src = "assets/video/勾指起誓.mp4" width = "240" height = "135" controls></video>
     <video src = "assets/video/权御天下2025重制版.mp4" width = "240" height = "135" controls></video>
@@ -51,7 +63,7 @@
 </section>
 
 <section>
-    <p><h2 class = "zhuanTi">同人二创</h2></p>
+    <div class = "zhuanTi">同人二创</div>
     <video src = "assets/video/希望乌托邦有羽毛和翅膀.mp4" width = "240" height = "135" controls></video>
     <video src = "assets/video/【洛天依】伴月同眠.mp4" width = "240" height = "135" controls></video>
     <video src = "assets/video/【洛天依】昔涟.mp4" width = "240" height = "135" controls></video>
@@ -64,15 +76,12 @@
 </section>
 
 <footer>
-    <p><h2 class = "zhuanTi">关于我们</h2></p>
+    <div class = "zhuanTi">关于我们</div>
     <p>站长b站号：<a href = "https://space.bilibili.com/1611467675" target = "_blank">JsPointer</a></p>
     <p>联系我们：<a href = "mailto:zhijiashun2024@163.com" target = "_blank">zhijiashun2024@163.com</a></p>
     <p>资助我们：<a href = "assets/img/收款码.png" target = "_blank">前往捐赠</a></p>
     <p>关于本站：<a href = "更新日志.html" target = "_blank">更新日志</a></p>
 </footer>
-
-<div class = ""></div>
-
 </body>
 </html>
 <!--
