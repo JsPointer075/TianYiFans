@@ -5,17 +5,36 @@ body{
 #tianyi{
     margin: 0 5px;
 }
-.title{
+#title{
     color: white;
-    background: #00ccff;
+    font-weight: 600;
     font-size: 35px;
+}
+.title-warp{
+    background: #66ccff;
+    font-weight: normal;
+    padding: 12px 16px;
+}
+/* 这块是用AI写的，还没看懂，先留着注释（后面那一块也是） */
+.title-wrap input[type="text"] {
+    font-size: 20px;/* 和文字同样字号，统一大小 */
+   border: 1px solid #ccc; /* 清除浏览器默认边框、轮廓 */
+    outline: none;
+    padding: 2px 6px;/* 去除input默认过大内边距，实现和文字等高 */
+    display: inline-block;/* 行内块，和文字基线对齐 */
+    vertical-align: middle;/* 和文字垂直居中对齐 */
+}
+.title-wrap input[type="text"]::placeholder {
+    font-size: 20px;
+    color:#999;
 }
 .zhuanTi{
     color: white;
-    background: #00ccff;
+    background: #66ccff;
 }
 .yeMian{
     color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
     font-size: 20px;
     text-decoration: none;
     }
@@ -23,4 +42,9 @@ body{
     color: blue;
     font-size: 20px;
     text-decoration: none;
+}
+.headerText{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    font-size: 20px;
 }
