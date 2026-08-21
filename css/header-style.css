@@ -13,6 +13,11 @@
     padding: 2px 6px;
     display: flex;
     align-items: center;
+    /* sticky固定顶部 */
+    position: sticky;
+    top: 0;
+    z-index:999;
+    box-sizing: border-box;
 }
 .nav-left{
     flex: 1;
@@ -47,7 +52,7 @@
     border:2px solid #ffffff;
     border-radius:10px;
     /* 进一步缩小组件内部上下padding，让搜索块本身高度更小 */
-    padding:2px 10px;
+    padding:0 10px;
 }
 .search-wrapper input[type="text"] {
     flex:1;
