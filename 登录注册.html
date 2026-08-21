@@ -8,60 +8,70 @@
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel = "stylesheet" href = "css/style.css" type = "text/css">
     <link rel = "stylesheet" href = "css/header-style.css" type = "text/css">
+    <link rel = "stylesheet" href = "css/sign_in-style.css" type = "text/css">
 </head>
 <body>
 <div class = "title-wrap">
-        <div class = "nav-left">
-            <ul>
-                <li><img id = "tianyi" src = "assets/img/洛天依头像2026.png" width = "30" height = "30"><span id = "title">天依fans</span></li>
-                <li><a href = "index.html" class = "yeMian">首页</a></li>
-                <li><a href = "番剧.html" class = "yeMian">番剧</a></li>
-                <li><a href = "游戏.html" class = "yeMian">游戏</a></li>
-            </ul>
-        </div>
-        <div class = "search-center">
-            <form action = "#" method = "get" class = "search-form">
-                <div class = "search-wrapper">
-                    <input type = "text" name = "search" placeholder = "请输入文本">
-                    <button type = "submit" class = "search-btn">搜索</button>
-                </div>
-            </form>
-        </div>
-        <div class = "nav-right">
-            <a href = "登录注册.html" class = "yeMian"><img src = "assets/img/洛天依头像2026.png" width = "25" height = "25">登录/注册</a>
-        </div>
+    <div class = "nav-left">
+        <ul>
+            <li><a href = "index.html" id = "title"><img src = "assets/img/洛天依头像2026.png" width = "30" height = "30"><span>天依fans</span></a></li>
+            <li class = "yeMian"><a href = "index.html" class = "yeMian">首页</a></li>
+            <li><a href = "番剧.html" class = "yeMian">番剧</a></li>
+            <li><a href = "游戏.html" class = "yeMian">游戏</a></li>
+        </ul>
+    </div>
+    <div class = "search-center">
+        <form action = "#" method = "get" class = "search-form">
+            <div class = "search-wrapper">
+                <input type = "text" name = "search" placeholder = "请输入文本">
+                <button type = "submit" class = "search-btn">搜索</button>
+            </div>
+        </form>
+    </div>
+    <div class = "nav-right">
+        <a href = "登录注册.html" class = "yeMian"><img src = "assets/img/洛天依头像2026.png" width = "25" height = "25">登录/注册</a>
+    </div>
 </div>
 
-<form action = "天依fans.html" method = "post">
-    <p>账号：<input type = "text" name = "username" minlength = "11" maxlength="11" placeholder = "请输入手机号"></p>
-    <p>密码：<input type = "password" name = "pwd" minlength = "6" placeholder = "请输入密码"></p>
-    <p>性别：
-        <input type = "radio" value = "boy" name = "sex" id = "man"><label for = "man">男</label>
-        <input type = "radio" value = "girl" name = "sex" id = "woman"><label for = "woman">女</label>
-    </p>
-    <p>喜欢的虚拟歌手：
-        <input type = "checkbox" value = "cywl" name = "Vsinger" id = "miku"><label for = "miku">初音未来</label>
-        <input type = "checkbox" value = "lty" name = "Vsinger" id = "lty"><label for = "lty">洛天依</label>
-        <input type = "checkbox" value = "yzl" name = "Vsinger" id = "yzl"><label for = "yzl">乐正绫</label>
-        <input type = "checkbox" value = "yh" name = "Vsinger" id = "yh"><label for = "yh">言和</label>
-        <input type = "checkbox" value = "xc" name = "Vsinger" id = "xc"><label for = "xc">星尘</label>
-    </p>
-    <p>国家：
-        <select name = "国家">
-            <option value = "china">中国</option>
-            <option value = "japan">日本</option>
-            <option value = "us">美国</option>
-        </select>
-    </p>
-    <p>反馈：
-        <textarea name = "textarea"></textarea>
-    </p>
-    <p>
-        <input type = "submit">
-        <input type = "reset">
-        <a href = "index.html"><input type = "button" name = btln value = "返回"></a>
-    </p>
-</form>
-
+<div class="login-box">
+    <h2>登录</h2>
+    <form action="index.html" method="post" id="loginForm">
+        <p>账号：<input type="text" name="username" minlength="11" maxlength="11" placeholder="请输入手机号"></p>
+        <p>密码：<input type="password" name="pwd" minlength="6" placeholder="请输入密码"></p>
+        <div class="tip-row">
+            <a href="登录注册.html" class="forget-pwd">忘记密码</a>
+            <span>没有账号？<a href="登录注册.html" class="reg-link">立即注册</a></span>
+        </div>
+        <p><button type="submit" class="login-btn">登录</button></p>
+    </form>
+</div>
 </body>
 </html>
+<!--
+<p>性别：
+    <input type = "radio" value = "boy" name = "sex" id = "man"><label for = "man">男</label>
+    <input type = "radio" value = "girl" name = "sex" id = "woman"><label for = "woman">女</label>
+</p>
+<p>喜欢的虚拟歌手：
+    <input type = "checkbox" value = "cywl" name = "Vsinger" id = "miku"><label for = "miku">初音未来</label>
+    <input type = "checkbox" value = "lty" name = "Vsinger" id = "lty"><label for = "lty">洛天依</label>
+    <input type = "checkbox" value = "yzl" name = "Vsinger" id = "yzl"><label for = "yzl">乐正绫</label>
+    <input type = "checkbox" value = "yh" name = "Vsinger" id = "yh"><label for = "yh">言和</label>
+    <input type = "checkbox" value = "xc" name = "Vsinger" id = "xc"><label for = "xc">星尘</label>
+</p>
+<p>国家：
+    <select name = "国家">
+        <option value = "china">中国</option>
+        <option value = "japan">日本</option>
+        <option value = "us">美国</option>
+    </select>
+</p>
+<p>反馈：
+    <textarea name = "textarea"></textarea>
+</p>
+<p>
+    <input type = "submit">
+    <input type = "reset">
+    <a href = "index.html"><input type = "button" name = btln value = "返回"></a>
+</p>
+-->

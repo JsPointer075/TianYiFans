@@ -1,10 +1,8 @@
-#tianyi{
-    margin: 0 5px;
-}
 #title{
     color: white;
     font-weight: 600;
     font-size: 30px;
+    text-decoration: none;
 }
 /* 这块是用AI写的，还没看懂，先留着注释（整个title-wrap都是用AI写的） */
 .title-wrap{
@@ -93,11 +91,15 @@
     font-weight: 600;
     font-size: 20px;
     text-decoration: none;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    display: inline-block;
 }
 .yeMian:hover{
     color: blue;
     font-size: 20px;
     text-decoration: none;
+    transform: translateY(-3px);
 }
 .headerText{
     color: rgba(0, 0, 0, 0.6);
